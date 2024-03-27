@@ -76,6 +76,17 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# autoload -Uz zrecompile
+# autoload -Uz compinit
+# dump=$ZSH_COMPDUMP
+#
+# http://zsh.sourceforge.net/Doc/Release/Conditional-Expressions.html
+# if [[ -s $dump(#qN.mh+24) && (! -s "$dump.zwc" || "$dump" -nt "$dump.zwc") ]]; then
+#     compinit -i d $ZSH_COMPDUMP
+#     zrecompile $ZSH_COMPDUMP
+# fi
+# compinit -C
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

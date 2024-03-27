@@ -1,0 +1,5 @@
+
+export ZDOTDIR=$HOME/.config/
+
+export ZSH_COMPDUMP="$HOME/.zcompdump"
+
