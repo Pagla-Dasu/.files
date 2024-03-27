@@ -58,7 +58,10 @@ keymap.set("n", "du", "yyp", opts)
 
 -- Diagnostics
 keymap.set("n", "<C-j>", function()
-  vim.diagnostic.goto_next()
+	vim.diagnostic.goto_next()
 end, opts)
 
 keymap.set("n", "<Leader>ca", ":lua vim.lsp.buf.code_action()<Return>", opts)
+
+-- Greatest keymap ever, thanks to: ThePrimeagen ❤️
+keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
