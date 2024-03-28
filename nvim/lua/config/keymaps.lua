@@ -63,6 +63,7 @@ end, opts)
 
 keymap.set("n", "<Leader>ca", ":lua vim.lsp.buf.code_action()<Return>", opts)
 keymap.set("n", "<S-k>", ":lua vim.lsp.buf.hover()<Return>", opts)
+keymap.set("n", "<S-g>", "<S-g>zz", opts)
 
 -- Greatest keymap ever, thanks to: ThePrimeagen ❤️
 keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
